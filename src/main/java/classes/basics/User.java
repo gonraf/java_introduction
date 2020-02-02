@@ -20,5 +20,6 @@ class User {
 
     void introduce() {
         System.out.println("Imię: " + name + ", Nazwisko: " + lastname + ", Wiek: " + age);
+        //to jest tylko przykład
     }
 }
