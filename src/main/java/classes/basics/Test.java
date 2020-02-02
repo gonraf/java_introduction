@@ -21,8 +21,16 @@ public class Test {
         User cloneJozek = new User(jozek);
         cloneJozek.introduce();
         cloneJozek.name = "Robert";
+        cloneJozek.age = 20;
+        System.out.println("Po zmianie imienia: ");
+        jozek.introduce();
         cloneJozek.introduce();
 
         System.out.println("Józek:" + jozek + ", Robert:" +cloneJozek);
+
+
+        System.out.println("#### TEST WIEKU ####");
+        System.out.println("Czy Adam jest dorosły?" + adam.isAdult());
+        System.out.println("Czy Józek jest dorosły? " + jozek.isAdult());
     }
 }

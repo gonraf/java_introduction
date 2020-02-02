@@ -5,6 +5,8 @@ class User {
     String lastname;
     int age;
 
+    static final int MIN_AGE = 18;
+
     User(String name, String lastname, int age) {
         this.name = name;
         this.lastname = lastname;
@@ -20,6 +22,10 @@ class User {
 
     void introduce() {
         System.out.println("Imię: " + name + ", Nazwisko: " + lastname + ", Wiek: " + age);
-        //to jest tylko przykład
+    }
+    boolean isAdult() {
+        boolean isAdult = age >= MIN_AGE;
+        return isAdult;
+
     }
 }
