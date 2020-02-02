@@ -11,6 +11,13 @@ public class PointCollection {
             pointNumber++;
         }
     }
+
+    void printStats() {
+        //wypisz najmniejszy, największy dystans między punktami
+        // tip - wskazówka: nie porównuj punktu samego z sobą (if (point1 !=point2))
+        double max = Double.MIN_VALUE;
+        double min = Double.MAX_VALUE;
+    }
     
     void printAllPoints() {
         // wypisz wszystkie elementy tablicy this.points od 0 do (this.pointNumber - 1)
