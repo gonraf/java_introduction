@@ -1,5 +1,7 @@
 package exercise;
 
+import com.sun.org.apache.xpath.internal.res.XPATHErrorResources_sv;
+
 public class Test {
 
     public static void main(String[] args) {
@@ -14,6 +16,13 @@ public class Test {
 
         distance = point2. distance(point1);
         System.out.println(distance);
+
+        PointCollection pointCollection = new PointCollection();
+        pointCollection.addPoints(point1);
+        pointCollection.addPoints(point1, point2);
+        pointCollection.addPoints(point2, point1);
+        pointCollection.printAllPoints();
+
 
     }
 }
