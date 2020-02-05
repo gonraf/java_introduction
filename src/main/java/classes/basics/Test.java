@@ -4,7 +4,7 @@ public class Test {
 
     public static void main(String[] args) {
         String nazwisko = "Kowalski";
-        User adam = new User( "Adam", nazwisko, 45);
+        User adam = new User( "Adam" , nazwisko, 45);
         //adam.name = "Adam";
         //adam.lastname = "Kowalski";
         //adam.age = 36;
@@ -12,11 +12,15 @@ public class Test {
         System.out.println(adam.lastname);
         System.out.println(adam.age);
 
-        User jozek = new User( "Józek", "Nowak", 34);
+        User jozek = new User ("Józek", "Nowak", 45);
         //jozek.name = "Józek";
         //jozek.lastname = "Nowak";
-        //jozek.age = 42;
+        //jozek.age = 45;
         jozek.introduce();
+
+        User baba = new User ("Robert", "Nowak", 12);
+        baba.introduce();
+        System.out.println("");
 
         User cloneJozek = new User(jozek);
         cloneJozek.introduce();
@@ -27,10 +31,11 @@ public class Test {
         cloneJozek.introduce();
 
         System.out.println("Józek:" + jozek + ", Robert:" +cloneJozek);
-
-
-        System.out.println("#### TEST WIEKU ####");
-        System.out.println("Czy Adam jest dorosły?" + adam.isAdult());
+        System.out.println(" #### TEST WIEKU #### ");
+        System.out.println("Czy Adam jest dorosły? " + adam.isAdult());
         System.out.println("Czy Józek jest dorosły? " + jozek.isAdult());
+        System.out.println("Czy Robert jest dorosły? " + cloneJozek.isAdult());
+
+
     }
 }
