@@ -17,6 +17,23 @@ public class PointCollection {
         // tip - wskazówka: nie porównuj punktu samego z sobą (if (point1 !=point2))
         double max = Double.MIN_VALUE;
         double min = Double.MAX_VALUE;
+        for (int i = 0; i < pointNumber; i++) {
+            Point point1 = points[i];
+            for (int j = 0; j < pointNumber; j++) {
+                Point point2 = points[j];
+                if (point1 == point2) {
+                    continue;
+                }
+                double distance = point1.distance(point2);
+                if (distance < min) {
+                    min = distance;
+                }
+                if (distance > max) {
+                    max = distance;
+                }
+            }
+        }
+        System.out.println("Maksymalna odległość: " + max + ", minimalna odległość: " + min);
     }
     
     void printAllPoints() {
