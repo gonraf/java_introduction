@@ -1,10 +1,22 @@
 package inheritance.figure;
 
 public class Square implements Figure {
-    public Square(double a, )
+
+    private double side;
+
+    public Square (double side) {
+        this.side = side;
+    }
+
 
     @Override
     public double area() {
-        return ;
+        return side *side;
     }
+
+    @Override
+    public String toString() {
+        return "Square {" +" side = " + side + '}';
+    }
+
 }

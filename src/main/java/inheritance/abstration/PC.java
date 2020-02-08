@@ -1,15 +1,14 @@
 package inheritance.abstration;
 
-public class PC implements Computer{
+public class PC implements Computer {
+
     @Override
     public void sendEmail(String address, String content) {
-        System.out.println("Sending email " + content + " to adress " + address + " using PC");
-
+        System.out.println("Sending email: \"" + content + "\" to: " + address);
     }
 
     @Override
-    public void browseInternet() {
-        System.out.println("Browsing Internet using PC");
-
+    public void browseInternet(String address) {
+        System.out.println("Browsing Internet: " + address + " using PC");
     }
 }
