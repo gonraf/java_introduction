@@ -33,7 +33,7 @@ public class ConditionInstuctions {
         System.out.println("Fajnie że masz " + age + " " + ending + " !");
 
         if (age >= 21) {
-            System.out.println("Jesteś osobą dorosłą w USA");
+            System.out.println("Jesteś osobą dorosłą w USA i w Polsce");
         } else if (age >= 18) {
             System.out.println("Jesteś osobą dorosłą w Polsce");
         } else {
